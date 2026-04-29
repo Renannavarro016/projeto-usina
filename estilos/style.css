@@ -134,6 +134,7 @@ section {
     width: 70%;
     height: 260px;
     margin-top: 60px;
+    margin-bottom: 20px;
     aspect-ratio: 1/1;
     padding: 1px transparent;
     transition: transform .7s, border .7s, box-shadow .7s;
