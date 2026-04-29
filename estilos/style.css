@@ -18,7 +18,8 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }   
 
-header {
+/* Cabeça do site */
+header {                            
    padding: 10px;
    color: var(--texto);
 }
@@ -27,6 +28,7 @@ body, #principal {
     background-image: linear-gradient(to bottom, #5C4F4A, #a57f5a);
 }
 
+/* Menu do site */
 #nav-bar {
     display: flex;
     justify-content: space-around;
@@ -57,6 +59,7 @@ body, #principal {
     color: var(--texto-fundo);
 }
 
+/* Introdução do site */
 section {
    padding: 25px;
 }
@@ -67,6 +70,7 @@ section {
     align-items: center;
 }
 
+/* Titulo */
 #principal h2 {
     padding: 5px;
     font-size: 1.4em;
@@ -74,6 +78,7 @@ section {
     text-align: center;
 }
 
+/* Descrição do site */
 #principal .paragrafo {
     padding: 30px;
     width: 100%;
@@ -82,9 +87,6 @@ section {
     align-items: center;
     text-align: center;
     color: var(--texto-fundo);
-}
-
-#principal .paragrafo {
     transition: color .5s, transform .5s, background-color .5s, border-radius .5s;
 }
 
@@ -101,6 +103,7 @@ section {
     padding: 30px;
 }
 
+/* Botão de contato */
 #principal .botao a {
     width: 100%;
     background-color: var(--cabeca);
@@ -118,22 +121,23 @@ section {
     background-color: var(--texto-fundo);
 }
 
+/* Imagem da empresa */
 #principal img {
     border-radius: 2px 80px 2px 55px;
     border: 1px solid var(--borda);
-    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.075);
-    margin-top: 60px;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.178);
     display: block;
-    margin: 120px 80px;
+    margin: auto;
     cursor: pointer;
 }
 
 #principal .foto {
     width: 70%;
     height: auto;
+    margin-top: 50px;
     aspect-ratio: 1/1;
     padding: 1px transparent;
-    transition: transform .5s, border .5s, box-shadow .5s;
+    transition: transform .7s, border .7s, box-shadow .7s;
 }
 
 #principal .foto:hover {
@@ -142,26 +146,11 @@ section {
     box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.219);
 }
 
+/* Parte de informações da empresa */
 #infos {
     background-color: var(--cabeca);
     display: grid;
     grid-template-columns: 1fr;
-}
-
-.caixa {
-    border-radius: 10px;
-    background-color: var(--cabeca);
-    margin-top: 20px;
-}
-
-.caixa a {
-    color: rgb(74, 74, 253);
-    padding: 20px;
-    transition: color .5s;
-}
-
-.caixa a:hover {
-    color: rgba(88, 88, 199, 0.733);
 }
 
 #infos div {
@@ -177,9 +166,27 @@ section {
     color: var(--texto-inverso);
 }
 
+.caixa {
+    border-radius: 10px;
+    background-color: var(--cabeca);
+    margin-top: 20px;
+}
+
+/* link da empresa e etc. */
+.caixa a {
+    color: rgb(74, 74, 253);
+    padding: 20px;
+    transition: color .5s;
+}
+
+.caixa a:hover {
+    color: rgb(94, 94, 170);
+}
+
+/* Mais algumas infos e detalhes da empresa */
 #detalhes {
     background-color: var(--corpo);
-    padding: 10px;
+    padding: 5px;
 }
 
 #detalhes .img1 {
@@ -187,21 +194,23 @@ section {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    margin: 20px 20px;
-    gap: 60px;
+    margin: 30px 20px;
+    gap: 45px;
 }
 
+/* 1 texto dos detalhes */
 #detalhes .img1 p {
-    width: 50%;
-    margin: 10px;
+    width: fit-content;
+    margin: 0;
     font-size: 0.9em;
     color: var(--texto);
 }
 
+/* 1 imagem */
 #detalhes .img1 img {
-    width: 40%;
+    width: 50%;
     height: auto;
-    aspect-ratio: 16/14;
+    aspect-ratio: 1/1;
     border-radius: 50px 6px 50px 6px;
     box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.281);
     transition: transform .7s;
@@ -217,21 +226,23 @@ section {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    margin: 20px 20px;
-    gap: 60px;
+    margin: 30px 20px;
+    gap: 45px;
 }
 
+/* 2 texto dos detalhes */
 #detalhes .img2 p {
-    width: 90%;
-    margin: 20px;
+    width: fit-content;
+    margin: 0;
     font-size: 0.9em;
     color: var(--texto);
 }
 
+/* 2 imagem */
 #detalhes .img2 img {
-    width: 40%;
+    width: 50%;
     height: auto;
-    aspect-ratio: 16/14;
+    aspect-ratio: 1/1;
     border-radius: 6px 50px 6px 50px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.349);
     transition: transform .7s;
@@ -242,10 +253,12 @@ section {
     transform: translateX(-2px);
 }
 
+/* Descrição sobre algumas areas da empresa, e para que servem e funcionam */
 #areas {
     background-color: var(--cabeca);
 }
 
+/* titulo */
 #areas h2 {
     margin-top: 20px;
     margin-bottom: -10px;
@@ -263,6 +276,7 @@ section {
     padding: 30px;
 }
 
+/* fotos de setores da empresa */
 .container-areas img {
     width: 65%;
     aspect-ratio: 2/1;
@@ -271,6 +285,7 @@ section {
     border: 1px solid rgba(255, 255, 255, 0.308);
 }
 
+/* textos de informações */
 .container-areas p {
     margin-top: 20px;
     font-size: 0.9em;
@@ -279,11 +294,13 @@ section {
     background-color: var(--logo);
 }
 
+/* Área de prato, refeições que a empresa tem e oferece */
 #comidas {
     background-color: var(--borda);
     padding: 20px;
 }
 
+/* titulo */
 #comidas h2 {
     display: flex;
     justify-content: center;
@@ -293,21 +310,22 @@ section {
     font-size: 1.5em;
 }
 
+/* fotos das comidas */
 #comidas .fotos {
     display: grid;
     grid-template-columns: auto auto auto;
 }
 
 #comidas .fotos img {
-    width: 55%;
-    height: auto;
+    width: fit-content;
+    height: 88px;
     display: block;
     margin: auto;
     align-items: center;
     border-radius: 50%;
     aspect-ratio: 1/1;
     margin-top: 45px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     transition: transform .5s;
     box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.356);
     cursor: pointer;
@@ -317,6 +335,14 @@ section {
     transform: translateY(-4px);
 }
 
+/* separação entre as imagens e o texto abaixo */
+#comidas hr {
+    width: 85%;
+    display: block;
+    margin: auto;
+}
+
+/* texto sobre as comidas que tem, e a sua importância para a empresa */
 #comidas p {
     display: block;
     margin: auto;
@@ -328,11 +354,64 @@ section {
     padding: 10px;
 }
 
+/* imagem dos fornecedores de alimento da empresa */
+.restaurante img {
+    width: fit-content;
+    height: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    aspect-ratio: 2/2;
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.315);
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+/* separação entre as imagens dos fornecedores*/
+#comidas .restaurante hr {
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-bottom: 23px;
+}
+
+.restaurante img:hover {
+    transform: translateY(-3px);
+}
+
+/* @ dos fornecedores */
+#comidas .restaurante div .pr {
+    font-size: 0.8em;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* ajustes das imagens e @ */
+#comidas .restaurante div .pr a {
+    color: var(--texto);
+    text-decoration: none;
+    transition: color .5s;
+}
+
+#comidas .restaurante div .pr a:hover {
+    color: var(--texto-fundo);
+    text-decoration: underline;
+}
+
+#comidas .restaurante div {
+    padding-top: 50px;
+}
+
+/* Parte de enecerramento do site, rodapé. */
 #container-footer {
     background-image: linear-gradient(to top, #4b403c, #997653);
     color: white;
 }
 
+/* Redes socias para contato */
 #redes {
     padding: 50px;
     font-weight: bolder;
@@ -343,6 +422,7 @@ section {
     gap: 15px;
 }
 
+/* ajustes das imagens */
 #redes a {
     color: var(--cabeca);
     transition: transform .5s, color .5s;
@@ -353,6 +433,7 @@ section {
     transform: translateY(-3px);
 }
 
+/* creditos e infos finais sobre a empresa, e de como entrar em contato */
 .creditos {
     font-size: 0.8em;
     font-weight: bold;
@@ -363,10 +444,12 @@ section {
     text-align: left;
 }
 
+/* ajuste */
 .creditos p {
     margin: 10px;
 }
 
+/* links de patrocinadores e de contatos da empresa */
 .links {
     padding: 50px;
     display: flex;
@@ -375,6 +458,7 @@ section {
     gap: 20px;
 }
 
+/* ajustes dos links */
 .links a, #link {
     margin-top: 30px;
     color: var(--cabeca);
@@ -388,6 +472,7 @@ section {
     text-decoration: underline;
 }
 
+/* credito final ao desenvolvedor, ou direitos autorais da empresa */
 .dev p {
    padding-top: 50px;
    display: flex;
@@ -398,6 +483,7 @@ section {
    font-weight: bolder;
 }
 
+/* ajustes do link e credito */
 .dev p a {
     color: var(--cabeca);
     text-decoration: none;
