@@ -122,6 +122,7 @@ section {
 
 /* Imagem da empresa */
 #principal img {
+    width: fit-content;
     border-radius: 2px 80px 2px 55px;
     border: 1px solid var(--borda);
     box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.178);
@@ -131,7 +132,7 @@ section {
 }
 
 #principal .foto {
-    width: 70%;
+    width: fit-content;
     height: 260px;
     margin-top: 60px;
     margin-bottom: 20px;
@@ -493,4 +494,300 @@ section {
 .dev p a:hover {
     color: var(--logo);
     text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    #principal {
+        display: grid;  
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 70px;
+    }
+
+    #principal .paragrafo {
+        width: 65%;
+        display: block;
+        margin: auto;
+        padding: 20px;
+        margin-right: 25%;
+    }
+
+    #principal h2 {
+        margin-right: 15%;
+    }
+
+    #principal .botao {
+        margin-right: 17%;
+    }
+
+    #principal img {
+        margin-right: 70px;
+    }
+
+    #principal .foto {
+        width: 90%;
+        aspect-ratio: 1/1;
+        border-radius: 100px 25px 100px 25px;
+        margin-bottom: 30px
+    }
+
+    #infos {
+        padding: 50px;
+    }
+
+    #infos .caixa {
+        margin: 50px;
+        width: 75%;
+        display: block;
+        margin: auto;
+    }
+
+    #detalhes {
+        display: block;
+        margin: auto;
+        flex-direction: column-reverse;
+    }
+
+    #detalhes .img1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #detalhes .img1 img {
+        width: 35%;
+        margin-top: 55px;
+        aspect-ratio: 1/1;
+    }
+
+    #detalhes .img1 p {
+        width: 60%;
+    }
+
+    #detalhes .img2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    #detalhes .img2 img {
+        width: 35%;
+        margin-top: 50px;
+        aspect-ratio: 1/1;
+    }
+
+    #detalhes .img2 p {
+        width: 60%;
+        margin-bottom: 60px;
+    }
+
+    #areas h2 {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: auto;
+       margin-top: 50px;
+    }
+
+    .container-areas {
+        padding: 20px;
+    }
+
+    .container-areas img {
+        width: 55%;
+        display: block;
+        margin: auto;
+        margin-top: 35px;
+    }
+
+    .container-areas p {
+        width: 60%;
+        display: block;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    #comidas .fotos img {
+        width: 40%;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+    #comidas p {
+       font-size: 1.1em;
+       width: 45%;
+    }
+
+    #comidas .restaurante hr {
+        width: 33%;
+        margin-bottom: 30px;
+    }
+
+    #container-footer .creditos {
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    #container-footer .creditos p {
+        width: 40%;
+        display: block;
+        margin: auto;
+        font-size: 1.1em;
+    }
+
+    #container-footer .creditos hr {
+        width: 50%;
+        display: block;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    #container-footer .links {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1068px) {
+    #principal {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    #principal article h2 {
+        margin-right: 34%;
+    }
+
+    #principal .botao {
+        margin-right: 36%;
+    }
+
+    #principal .paragrafo {
+        width: 40%;
+        margin-left: 13%;
+        font-size: 1em;
+    }
+
+    #principal .foto {
+        width: 85%;
+        height: fit-content;
+        aspect-ratio: 1/1;
+        border-radius: 100px 25px 100px 100px;
+        position: relative;
+        right: 30%;
+        margin-bottom: 50px
+    }
+
+    #infos .caixa {
+        margin-top: 20px;
+        padding: 50px;
+    }
+
+    #infos .caixa p {
+        width: 95%;
+    }
+
+    #detalhes {
+       display: flex;
+       flex-direction: row; 
+       justify-content: space-around;
+    }
+
+    #detalhes .img1 img {
+        width: 37%;
+        height: auto;
+        aspect-ratio: 1/1;
+        margin-top: 40px;
+    } 
+
+    #detalhes .img1 p {
+        width: 45%;
+        font-size: 1em;
+    }
+
+    #detalhes .img2 img {
+        width: 40%;
+        height: auto;
+        aspect-ratio: 1/1;
+        margin-top: 100px;
+    } 
+
+    #detalhes .img2 p {
+        width: 45%;
+        font-size: 1em;
+        margin-bottom: 60px;
+    }
+
+    #areas h2 {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: auto;
+       margin-top: 50px;
+    }
+
+    .container-areas img {
+        width: 45%;
+    }
+
+    .container-areas p {
+        width: 45%;
+        font-size: 1.1em;
+    }
+
+    #comidas h2 {
+        margin-bottom: 50px;
+    }
+
+    #comidas .fotos img {
+        width: 21%;
+        height: 53%;
+    }
+
+    #comidas hr {
+        width: 73%;
+        margin-bottom: 30px;
+    }
+
+    #comidas p {
+        font-size: 1em;
+        padding-top: 60px;
+        width: 30%;
+    }
+
+    #comidas .restaurante hr {
+        width: 20%;
+    }
+
+    #container-footer #redes a {
+        font-size: 1.1em;
+        margin-top: 30px;
+    }
+
+    #container-footer .creditos {
+        margin-top: 40px;
+    }
+
+    #container-footer .creditos p {
+        width: 29%;
+        display: block;
+        margin: auto;
+        font-size: 1.2em;
+        gap: 0px;
+    }
+
+    #container-footer .creditos hr {
+        width: 30%;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    #container-footer .links {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 }
