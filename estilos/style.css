@@ -124,7 +124,7 @@ section {
 /* Imagem da empresa */
 #principal img {
     width: fit-content;
-    border-radius: 2px 80px 2px 55px;
+    border-radius: 20px 80px 20px 55px;
     border: 1px solid var(--borda);
     box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.178);
     display: block;
