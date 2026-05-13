@@ -124,7 +124,7 @@ section {
 /* Imagem da empresa */
 #principal img {
     width: fit-content;
-    border-radius: 20px 80px 20px 55px;
+    border-radius: 15px 100px 15px 100px;
     border: 1px solid var(--borda);
     box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.178);
     display: block;
@@ -204,7 +204,7 @@ section {
 #detalhes .img1 p {
     width: fit-content;
     margin: 0;
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: var(--texto);
 }
 
@@ -236,7 +236,7 @@ section {
 #detalhes .img2 p {
     width: fit-content;
     margin: 0;
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: var(--texto);
 }
 
@@ -371,7 +371,7 @@ section {
 
 /* separação entre as imagens dos fornecedores*/
 #comidas .restaurante hr {
-    width: 60%;
+    width: 45%;
     display: block;
     margin: auto;
     margin-bottom: 23px;
@@ -417,7 +417,7 @@ section {
 #redes {
     padding: 50px;
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 1.3em;
     display: flex;
     justify-content: center;
     align-items: center;
