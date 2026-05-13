@@ -210,7 +210,7 @@ section {
 
 /* 1 imagem */
 #detalhes .img1 img {
-    width: 45%;
+    width: 50%;
     height: auto;
     aspect-ratio: 1/1;
     border-radius: 50px 6px 50px 6px;
@@ -242,7 +242,7 @@ section {
 
 /* 2 imagem */
 #detalhes .img2 img {
-    width: 45%;
+    width: 50%;
     height: auto;
     aspect-ratio: 1/1;
     border-radius: 6px 50px 6px 50px;
