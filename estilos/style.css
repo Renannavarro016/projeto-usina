@@ -202,7 +202,7 @@ section {
 
 /* 1 texto dos detalhes */
 #detalhes .img1 p {
-    width: 35%;
+    width: 50%;
     margin: 0;
     font-size: 0.8em;
     color: var(--texto);
@@ -210,7 +210,7 @@ section {
 
 /* 1 imagem */
 #detalhes .img1 img {
-    width: 50%;
+    width: 55%;
     height: auto;
     aspect-ratio: 1/1;
     border-radius: 50px 6px 50px 6px;
@@ -234,7 +234,7 @@ section {
 
 /* 2 texto dos detalhes */
 #detalhes .img2 p {
-    width: 35%;
+    width: 50%;
     margin: 0;
     font-size: 0.8em;
     color: var(--texto);
@@ -242,7 +242,7 @@ section {
 
 /* 2 imagem */
 #detalhes .img2 img {
-    width: 50%;
+    width: 55%;
     height: auto;
     aspect-ratio: 1/1;
     border-radius: 6px 50px 6px 50px;
