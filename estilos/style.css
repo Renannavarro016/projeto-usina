@@ -280,7 +280,7 @@ section {
 
 /* fotos de setores da empresa */
 .container-areas img {
-    width: 65%;
+    width: 79%;
     aspect-ratio: 2/1;
     border-radius: 10px;
     box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.514);
@@ -618,7 +618,7 @@ section {
     }
 
     #comidas p {
-       font-size: 1.1em;
+       font-size: 1em;
        width: 45%;
     }
 
@@ -633,10 +633,10 @@ section {
     }
 
     #container-footer .creditos p {
-        width: 40%;
+        width: 45%;
         display: block;
         margin: auto;
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     #container-footer .creditos hr {
@@ -674,12 +674,12 @@ section {
     }
 
     #principal .foto {
-        width: 85%;
+        width: 80%;
         height: fit-content;
         aspect-ratio: 1/1;
         border-radius: 100px 25px 100px 100px;
         position: relative;
-        right: 30%;
+        right: 25%;
         margin-bottom: 50px
     }
 
@@ -732,12 +732,12 @@ section {
     }
 
     .container-areas img {
-        width: 45%;
+        width: 35%;
     }
 
     .container-areas p {
         width: 45%;
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     #comidas h2 {
@@ -765,7 +765,7 @@ section {
     }
 
     #container-footer #redes a {
-        font-size: 1.1em;
+        font-size: 1em;
         margin-top: 30px;
     }
 
